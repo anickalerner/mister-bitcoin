@@ -1,0 +1,7 @@
+<section>
+<contact-filter (onFilter)="onFilterHandler($event)"></contact-filter>
+<button (click)="onAddContact()">
+    <fa-icon [icon]="faPlus"></fa-icon>Add a contact
+</button>
+<contact-list [contacts]="contacts" (onDelete)="onDeleteContact($event)"></contact-list>
+</section>

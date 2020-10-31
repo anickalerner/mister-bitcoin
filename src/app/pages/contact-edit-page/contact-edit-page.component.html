@@ -1,0 +1,20 @@
+<section>
+    <div class="contact-form" *ngIf="contactForm">
+        <img [src]="image" [alt]="contact.name" />
+        <form [formGroup]="contactForm" (ngSubmit)="onSave()" class="flex column">
+            <label>Name
+                <input type="text" formControlName="name" placeholder="Name" required>
+            </label>
+            <label>Phone
+                <input type="phone" formControlName="phone" placeholder="+1 (123) 333-4444">
+            </label>
+            <label>Email
+                <input type="email" formControlName="email" placeholder="Email">
+            </label>
+            <div class="flex justify-between">
+                <button type="submit" [disabled]="!contactForm.valid">Save</button>
+                <button type="button" (click)="goBack()" class="btn-outline">Back</button>
+            </div>
+        </form>
+    </div>
+</section>

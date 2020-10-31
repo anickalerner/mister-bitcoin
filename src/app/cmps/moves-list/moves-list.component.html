@@ -1,0 +1,19 @@
+<div class="no-gutters" *ngIf="!isListEmpty()">
+    <h3>{{title}}</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>At</th>
+                <th>Amount</th>
+                <th *ngIf="latest">To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let move of moves">
+                <td>{{move.at | date}}</td>
+                <td>{{move.amount}}</td>
+                <td *ngIf="latest">{{move.to}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

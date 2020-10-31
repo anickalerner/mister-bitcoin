@@ -1,0 +1,15 @@
+img{
+    width: 150px
+}
+.contact-form form{
+    width: 50%;
+}
+input{
+    display: block;
+    width: 100%;
+}
+button:disabled{
+    cursor: auto;
+    background-color: gray;
+    border: 1px solid lightgrey
+}

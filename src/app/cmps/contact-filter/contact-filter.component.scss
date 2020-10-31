@@ -1,0 +1,16 @@
+@import "../../../assets/style/setup/mixins";
+@import "../../../assets/style/setup/variables";
+.main-filter {
+    width: 50%;
+    padding: 20px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;    
+    @include for-mobile-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    input:first-child{
+        margin-bottom: 15px;
+    }
+}

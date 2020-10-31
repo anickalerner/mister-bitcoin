@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $clr2;
+    color: $clr1;
+}
+
+html {
+    font-family: Merriweather-Regular;
+    line-height: 1.6;
+    color: $clr2;
+    background-color: $clr1;
+}
+
+body {
+    font-size: rem(18px);
+    margin: 0;
+}
+
+nav {
+    background-color: $clr2;
+}
+header {
+    background-color: $clr2;
+    width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Merriweather-Bold;
+    margin: 0 0 0.6em;
+    line-height: 1;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    margin: 0 0 1em;
+    max-width: 40ch;
+    font-family: Peddana-Regular;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &.book-list {
+        padding-top: 10px;
+    }
+}
+
+input {
+    outline: none;
+    border: none;
+    display: block;
+    background: transparent;
+    font-family: Livvic-Regular;
+    font-size: rem(18px);
+    color: #555555;
+    line-height: 1;
+    padding: 0 26px;
+
+    &.wrap-input {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        height: rem(40px);
+        position: relative;
+        border: 1px solid $clr4;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+}

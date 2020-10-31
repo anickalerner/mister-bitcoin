@@ -1,0 +1,14 @@
+<li class="preview" (click)="onContactClick($event)">
+    <div class="card">
+        <img [src]="image" alt={{contact.name}} />
+        <div class="card-body">
+            <h5 class="card-title">{{contact.name}}</h5>
+            <p class="card-text">{{contact.phone}}</p>
+            <p class="card-text">{{contact.email}}</p>
+        </div>
+        <div class="card-footer">
+            <button (click)="onContactEdit($event)">Edit</button>
+            <button (click)="onContactDelete($event)">Delete</button>
+        </div>
+    </div>
+</li>

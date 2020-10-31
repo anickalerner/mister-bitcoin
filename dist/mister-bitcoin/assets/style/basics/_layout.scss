@@ -1,0 +1,19 @@
+section{
+    width: 100%;
+    padding-top: 30px;
+    
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-gap: 20px;
+    grid-auto-rows: auto;
+    grid-column: 2/-1;
+    row-gap: 1.8rem;
+    @include for-wide-layout {
+        grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+    }
+    @include for-mobile-layout {
+        grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+    }
+}

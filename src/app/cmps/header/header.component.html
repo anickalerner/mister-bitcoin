@@ -1,0 +1,6 @@
+<nav class="main-nav">
+    <a routerLink="/home" title="Home"><fa-icon [icon]="faHome"></fa-icon></a>
+    <a routerLink="/contacts" title="Contacts"><fa-icon [icon]="faUserFriends"></fa-icon></a>
+    <a routerLink="/stats" title="Charts"><fa-icon [icon]="faChartLine"></fa-icon></a>
+    <a (click)="logout()" *ngIf="user" class="logout">Log out</a>
+</nav>

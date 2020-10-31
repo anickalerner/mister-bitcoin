@@ -1,0 +1,16 @@
+<div class="row no-gutters">
+    <form (ngSubmit)="onTransfer()" #transferForm="ngForm">
+        <div class="form-group">
+            <label for="name">Transfer coins to {{contact.name}}</label>
+            <div class="mb-3 flex">
+                <input type="number" [max]="user.coins" min="0" class="form-control" id="coins" required
+                    [(ngModel)]="transfer.coins" placeholder="0" name="coins" #coins="ngModel">
+                <button type="submit">Transfer</button>
+            </div>
+            <div *ngIf="error" class="alert alert-danger">
+                You can't transfer more than you have
+            </div>
+
+        </div>
+    </form>
+</div>

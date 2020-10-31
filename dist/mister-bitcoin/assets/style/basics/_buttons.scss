@@ -1,0 +1,33 @@
+button {
+    background-color: $clr5;
+    outline: none;
+    font-family: Merriweather-Regular;
+    color: $clr1;
+    font-size: 1rem;
+    border: 1px solid $clr6;
+    width: 80px;
+    line-height: 1.6;
+    border-radius: 0.25rem;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    a {
+        color: $clr1;
+        font-family: Merriweather-Regular;
+    }
+}
+.btn-outline{
+    background-color: $clr1;
+    color: $clr5;
+}
+
+.btn-outline-grey{
+    background-color: $clr1;
+    color: $clr2;
+    border: 1px solid $clr2;
+
+}
+.btn-full{
+    width:100%
+}
