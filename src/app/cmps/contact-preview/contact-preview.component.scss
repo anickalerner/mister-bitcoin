@@ -1,3 +1,4 @@
+@import "../../../assets/style/setup/mixins";
 @import "../../../assets/style/setup/variables";
 .preview{
     list-style: none;
@@ -6,6 +7,10 @@
     white-space: nowrap;
     text-overflow: clip;
     width: 250px;
+    @include for-mobile-layout {
+        width: 100%;
+        text-align: center;
+    }
     cursor: pointer;
     a, a:active, a:visited{
         color:$clr2; 

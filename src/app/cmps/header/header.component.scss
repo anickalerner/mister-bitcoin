@@ -1,22 +1,41 @@
+@import "../../../assets/style/setup/mixins";
 @import "../../../assets/style/setup/variables";
+
 .main-nav {
     background-color: $clr5;
     padding: 17px;
     font-size: 30px;
-    a, a:active, a:visited{
-    color: $clr1;
-    display: inline-block;
-    margin-right: 20px;
+    a,
+    a:active,
+    a:visited {
+        color: $clr1;
+        display: inline-block;
+        margin-right: 20px;
     }
     .logo {
         padding: 0;
         font-size: rem(24px);
         font-family: Merriweather-Bold;
     }
-    .logout{
+    .logout {
         cursor: pointer;
+        span {
+            display: inline-block;
+        }
+        i {
+            display: none;
+        }
+        @include for-mobile-layout {
+            span {
+                display: none;
+            }
+            i {
+                display: inline-block;
+            }
+        }
     }
 }
+
 .mobile-nav {
     display: none;
 }
