@@ -11,8 +11,8 @@ export class ContactService {
   constructor(private http: HttpClient) {
   }
 
-  private BASE_URL = '//localhost:3030/api/contact';
-  //private BASE_URL = '/api/contact';
+  //private BASE_URL = '//localhost:3030/api/contact';
+  private BASE_URL = '/api/contact';
     
 
   private _contacts$ = new BehaviorSubject<Contact[]>([])
